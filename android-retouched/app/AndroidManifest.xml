@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mgsport.retouched" android:versionCode="1" android:versionName="0.1-retouched">
+  <uses-feature android:glEsVersion="0x00010001" android:required="true"/>
+  <uses-feature android:name="android.hardware.gamepad" android:required="false"/>
+  <uses-feature android:name="android.hardware.sensor.gyroscope" android:required="false"/>
+  <uses-permission android:name="android.permission.VIBRATE"/>
+  <application android:label="MGS RETOUCHED" android:icon="@mipmap/ic_launcher" android:hasCode="true"
+      android:extractNativeLibs="false" android:allowBackup="false" android:isGame="true">
+    <activity android:name="com.mgsport.retouched.RetouchedActivity" android:exported="true"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:configChanges="orientation|screenSize|keyboardHidden|keyboard|navigation|screenLayout|smallestScreenSize|density|uiMode">
+      <meta-data android:name="android.app.lib_name" android:value="mgst"/>
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>

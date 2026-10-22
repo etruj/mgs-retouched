@@ -1,0 +1,8 @@
+# outputs and downloads: never commit (the APK and build/ contain the game)
+build/
+deps/
+out/
+*.ipa
+*.apk
+*.idsig
+UPLOAD_NOTES.md
